@@ -82,8 +82,10 @@ static const struct ua_model_info ua_models[] = {
 	/*                             play rec preamps hiz */
 	{ UA_DEV_APOLLO_SOLO,          3,  2,  1, 0 },
 	{ UA_DEV_ARROW,                3,  2,  1, 0 },
-	{ UA_DEV_APOLLO_TWIN_X,        8,  8,  2, 2 },
-	{ UA_DEV_APOLLO_TWIN_X_GEN2,   8,  8,  2, 2 },
+	{ UA_DEV_APOLLO_TWIN_X,        8,  8,  2, 1 },
+	{ UA_DEV_APOLLO_TWIN_X_GEN2,   8,  8,  2, 1 },
+	{ UA_DEV_APOLLO_TWIN_X_GEN2_DUO, 8, 8, 2, 1 },
+	{ UA_DEV_APOLLO_TWIN_X_GEN2_QUAD, 8, 8, 2, 1 },
 	{ UA_DEV_APOLLO_X4,           24, 22,  4, 2 },
 	{ UA_DEV_APOLLO_X4_GEN2,     24, 22,  4, 2 },
 	{ UA_DEV_APOLLO_X6,           24, 22,  4, 2 },

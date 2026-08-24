@@ -67,6 +67,8 @@
 #define UA_DEV_APOLLO_X8P_GEN2      0x38  /* Serial 2087 */
 #define UA_DEV_APOLLO_X16_GEN2      0x39  /* Serial 2088 */
 #define UA_DEV_APOLLO_TWIN_X_GEN2   0x3A  /* Serial 2089 */
+#define UA_DEV_APOLLO_TWIN_X_GEN2_DUO 0x3B /* Serial 2090 (Twin X Gen 2 DUO) */
+#define UA_DEV_APOLLO_TWIN_X_GEN2_QUAD 0x3C /* Serial 2091 (Twin X Gen 2 QUAD) */
 
 /*
  * AudioExtension vs legacy ring-buffer connect mechanism.
@@ -501,10 +503,12 @@ static inline bool ua_uses_audio_extension(u32 device_type)
 #define UA_MON_MUTE_OFF         0
 
 /*
- * Complete Bus ID Map (verified via DTrace Phase 3e, 2026-02-19)
+ * Complete Bus ID Map (verified via DTrace Phase 3e + UAD2DriverClient.dll RE)
  * Used in SEL130 (SetMixerBusParam) for fader/pan/send control.
+ *
+ * On Apollo Twin models, Bus 2 (Analog 3) is assigned to the internal Talkback mic.
  */
-#define UA_BUS_ANALOG_IN(n)     (n)           /* 0x0000-0x0003 */
+#define UA_BUS_ANALOG_IN(n)     (n)           /* 0x0000-0x0003 (Bus 2 = Talkback on Twin) */
 #define UA_BUS_CUE1_L           0x0004
 #define UA_BUS_CUE1_R           0x0005
 #define UA_BUS_CUE2_L           0x0006

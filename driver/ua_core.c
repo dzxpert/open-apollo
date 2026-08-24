@@ -253,8 +253,8 @@ static const struct ua_serial_entry ua_serial_table[] = {
 	{ "2087", UA_DEV_APOLLO_X8P_GEN2 },
 	{ "2088", UA_DEV_APOLLO_X16_GEN2 },
 	{ "2089", UA_DEV_APOLLO_TWIN_X_GEN2 },
-	{ "2090", 0x3B },  /* Unknown Gen2 variant */
-	{ "2091", 0x3C },  /* Unknown Gen2 variant */
+	{ "2090", UA_DEV_APOLLO_TWIN_X_GEN2_DUO },
+	{ "2091", UA_DEV_APOLLO_TWIN_X_GEN2_QUAD },
 	{ "2092", UA_DEV_APOLLO_X4_GEN2 },
 };
 
@@ -308,6 +308,8 @@ const char *ua_device_name(u32 device_type)
 	case UA_DEV_APOLLO_X8P_GEN2:	return "Apollo x8p Gen 2";
 	case UA_DEV_APOLLO_X16_GEN2:	return "Apollo x16 Gen 2";
 	case UA_DEV_APOLLO_TWIN_X_GEN2:	return "Apollo Twin X Gen 2";
+	case UA_DEV_APOLLO_TWIN_X_GEN2_DUO: return "Apollo Twin X Gen 2 DUO";
+	case UA_DEV_APOLLO_TWIN_X_GEN2_QUAD: return "Apollo Twin X Gen 2 QUAD";
 	default:			return "Unknown UA Device";
 	}
 }

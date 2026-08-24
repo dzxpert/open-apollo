@@ -1,0 +1,54 @@
+{
+  "model": "Apollo Twin X",
+  "variants": [
+    {
+      "name": "Apollo Twin X DUO",
+      "device_type": "0x23",
+      "hw_type_id": 40,
+      "ext_caps_type": "0x27",
+      "dsps": 2
+    },
+    {
+      "name": "Apollo Twin X QUAD",
+      "device_type": "0x23",
+      "hw_type_id": 41,
+      "ext_caps_type": "0x28",
+      "dsps": 4
+    },
+    {
+      "name": "Apollo Twin X SOLO",
+      "device_type": "0x23",
+      "hw_type_id": 39,
+      "ext_caps_type": "0x26",
+      "dsps": 1
+    },
+    {
+      "name": "Apollo Twin X Gen 2 DUO",
+      "device_type": "0x3B",
+      "hw_type_id": 52,
+      "ext_caps_type": "0x3B",
+      "dsps": 2,
+      "serial_prefix": "2090"
+    },
+    {
+      "name": "Apollo Twin X Gen 2 QUAD",
+      "device_type": "0x3C",
+      "hw_type_id": 53,
+      "ext_caps_type": "0x3C",
+      "dsps": 4,
+      "serial_prefix": "2091"
+    }
+  ],
+  "serial_prefix": "2020",
+  "channels": {
+    "play": 8,
+    "rec": 8
+  },
+  "preamps": 2,
+  "hiz": 1,
+  "talkback": 1,
+  "talkback_bus": 2,
+  "features": ["spdif", "adat", "unison", "talkback"],
+  "status": "definitions-verified-from-binary",
+  "notes": "Verified against UADPerfMon.exe and UAD2DriverClient.dll. Hi-Z is channel 1 front panel only (1 Hi-Z). Talkback mic routed on Bus 2 (Analog 3 in driver map)."
+}
