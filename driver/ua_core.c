@@ -218,6 +218,12 @@ static void ua_detect_capabilities(struct ua_device *ua)
 		case UA_SUBSYS_APOLLO_SOLO:
 			ua->device_type = UA_DEV_APOLLO_SOLO;
 			break;
+		case UA_SUBSYS_APOLLO_X4_QUAD:
+			ua->device_type = UA_DEV_APOLLO_X4;
+			break;
+		case UA_SUBSYS_APOLLO_TWIN_X:
+			ua->device_type = UA_DEV_APOLLO_TWIN_X;
+			break;
 		default:
 			ua_read_serial_type(ua);
 			break;

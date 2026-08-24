@@ -36,6 +36,7 @@
 #define UA_SUBSYS_APOLLO_X4_QUAD        0x0011
 #define UA_SUBSYS_APOLLO_SOLO           0x000F
 #define UA_SUBSYS_APOLLO_8P             0x0006
+#define UA_SUBSYS_APOLLO_TWIN_X         0x0019
 
 /*
  * UAD2DeviceType enum — reconstructed from CPcieDevice::Name() and
